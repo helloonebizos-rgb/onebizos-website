@@ -525,6 +525,47 @@
     .ft-legend .sw-next{background:var(--surface-2);border:1px solid var(--line)}
     @media(max-width:960px){.ft-grid{grid-template-columns:1fr;gap:42px}.ft-cards{grid-template-columns:1fr}.ft-why{max-width:none}}
     @media(max-width:720px){.ft-hero{padding:44px 0 56px}.ft-back{margin-bottom:30px}.ft-title{font-size:34px}.ft-sub{font-size:17px}.ft-formcard{padding:26px 22px}.ft-inside{padding:64px 0 74px}.ft-table{font-size:12px}.ft-table .ft-opt{display:none}.ft-table th,.ft-table td{padding:10px 8px}.ft-table th{white-space:normal}.ft-table td.ft-amber-cell,.ft-table td.ft-red-cell{white-space:normal}}
+
+    /* ---------- SEO pages (additive, namespaced seo- — touches nothing else) ---------- */
+    body.seo-open .mobile-buy{display:none}
+    .seo-view{background:var(--bg)}
+    .seo-hero{padding:64px 0 30px;background:linear-gradient(180deg,var(--bg),color-mix(in srgb,var(--surface-2) 54%,var(--bg)))}
+    .seo-back{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:14px;color:var(--muted);margin-bottom:40px;transition:color .2s}
+    .seo-back:hover{color:var(--gold)}
+    .seo-back svg{width:16px;height:16px}
+    .seo-title{font-size:clamp(36px,4.8vw,56px);line-height:1.05;margin:0 0 22px;max-width:820px}
+    .seo-lede{font-size:18.5px;line-height:1.65;color:var(--muted);margin:0;max-width:720px}
+    .seo-lede b{color:var(--ink)}
+    .seo-body{padding:26px 0 90px}
+    .seo-sec{max-width:760px;margin:0 0 44px}
+    .seo-sec h2{font-size:clamp(25px,3.2vw,34px);line-height:1.15;margin:0 0 14px}
+    .seo-sec p{color:var(--muted);font-size:16.5px;line-height:1.7;margin:0 0 14px}
+    .seo-sec p b{color:var(--ink)}
+    .seo-sec ul{list-style:none;margin:0;padding:0}
+    .seo-sec ul li{display:grid;grid-template-columns:23px 1fr;gap:12px;padding:9px 0;color:var(--muted);font-size:16px;line-height:1.6}
+    .seo-sec ul li svg{color:var(--green);width:19px;margin-top:4px}
+    .seo-sec ul li b{color:var(--ink)}
+    .seo-note{font-size:13.5px!important;color:var(--faint)!important}
+    .seo-tablewrap{border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:6px 0 14px;background:var(--surface)}
+    .seo-table{width:100%;border-collapse:collapse;font-size:14.5px;color:var(--ink)}
+    .seo-table th{background:var(--navy);color:#f2f5fa;text-align:left;font:700 11px "Manrope";letter-spacing:.07em;text-transform:uppercase;padding:13px 15px}
+    .seo-table td{padding:13px 15px;border-top:1px solid var(--line);vertical-align:top;line-height:1.55}
+    .seo-table td b{font-family:"Manrope",sans-serif}
+    .seo-table tr.seo-us td{background:var(--gold-soft)}
+    .seo-cta{background:var(--navy);color:#f2f5fa;border-radius:14px;padding:42px 40px;max-width:860px;position:relative;overflow:hidden}
+    .seo-cta:before{content:"";position:absolute;width:380px;height:380px;border-radius:50%;right:-130px;top:-160px;background:radial-gradient(circle,rgba(201,162,39,.20),transparent 65%);pointer-events:none}
+    .seo-cta h2{font-size:clamp(26px,3.4vw,36px);line-height:1.12;margin:0 0 12px;position:relative}
+    .seo-cta p{color:#b3c1d1;font-size:16px;line-height:1.65;margin:0 0 26px;max-width:600px;position:relative}
+    .seo-cta-actions{display:flex;flex-wrap:wrap;gap:13px;position:relative}
+    .seo-buy{background:transparent;border:1px solid #3a5578;color:#f2f5fa}
+    .seo-buy:hover{border-color:var(--gold);transform:translateY(-2px)}
+    .seo-built{color:#8ea0b4!important;font-size:13px!important;font-weight:600;margin:26px 0 0!important}
+    .seo-foot-row{border-top:1px solid #1b3355;padding-top:24px;margin-top:2px;font-size:13.5px;color:#7e93ac;line-height:2}
+    .seo-foot-row b{color:#d9b33b;font:700 11px "Manrope";letter-spacing:.14em;text-transform:uppercase;margin-right:10px}
+    .seo-foot-row a{color:#b9c8da;text-decoration:none;transition:color .2s}
+    .seo-foot-row a:hover{color:#fff}
+    .seo-foot-row .sep{margin:0 8px;color:#3a5578}
+    @media(max-width:720px){.seo-hero{padding:44px 0 22px}.seo-back{margin-bottom:30px}.seo-title{font-size:33px}.seo-lede{font-size:17px}.seo-cta{padding:32px 24px}.seo-cta-actions .button{width:100%}.seo-table{font-size:13px}.seo-table th,.seo-table td{padding:11px 10px}}
   </style>
 </head>
 <body>
@@ -872,6 +913,240 @@
     </section>
   </div>
 
+  <!-- ================= SEO PAGE: LIONDESK ALTERNATIVE ================= -->
+  <div class="seo-view" id="seo-liondesk-alternative" hidden>
+    <section class="seo-hero">
+      <div class="container">
+        <a class="seo-back" href="#top" data-seo-close><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 18l-6-6 6-6"/></svg> Back to OneBizOS home</a>
+        <p class="kicker">LionDesk Alternative</p>
+        <h1 class="seo-title">Your CRM can be deleted by someone else&rsquo;s boardroom. A Google Sheet can&rsquo;t be sunset.</h1>
+        <p class="seo-lede">Looking for a LionDesk alternative after the shutdown? OneBizOS Realtor Business OS gives you the CRM, pipeline and follow-up system LionDesk users lost — except it lives in <b>your own Google Drive</b>, costs <b>$49 once</b>, and no company can ever switch it off on you.</p>
+      </div>
+    </section>
+    <div class="seo-body">
+      <div class="container">
+        <div class="seo-sec">
+          <h2>What happened to LionDesk</h2>
+          <p>As reported by Inman and HousingWire, Lone Wolf Technologies discontinued LionDesk on <b>30 September 2025</b>. Agents who had built years of contacts, pipelines and follow-up history inside it were given a deadline to export their data and move — whether they were ready or not. Reports put the number of displaced agents at roughly <b>165,000</b>, a figure reported by Prospeo.</p>
+          <p>Nothing about that story is unusual. Software companies get acquired, products get merged, and the smaller product gets an end-of-life email. The only unusual part is how many agents it happened to at once.</p>
+        </div>
+        <div class="seo-sec">
+          <h2>The real lesson: rented software can be taken back</h2>
+          <p>When your CRM lives on someone else&rsquo;s servers, your business history is a guest in their building. Prices can rise, features can move behind higher tiers, and — as LionDesk users learned — the whole building can be demolished on a schedule set in a boardroom you will never sit in.</p>
+          <p>A system built inside Google Sheets works differently. The file is in <b>your Drive, under your Google account</b>. There is no server of ours to shut down, no subscription to lapse, and no boardroom that can vote your follow-up list out of existence.</p>
+        </div>
+        <div class="seo-sec">
+          <h2>The alternative: OneBizOS Realtor Business OS</h2>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m5 12 4 4L19 6"/></svg><span><b>CRM + pipeline in one sheet</b> — every lead, viewing, deal and commission in a single connected workspace.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m5 12 4 4L19 6"/></svg><span><b>Follow-ups that flag themselves</b> — due dates turn AMBER today and RED when overdue, so no lead quietly goes cold.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m5 12 4 4L19 6"/></svg><span><b>$49 once — no subscription</b> — lifetime updates and basic support included. One payment, and the system is yours.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m5 12 4 4L19 6"/></svg><span><b>Your data stays yours</b> — delivered into your own Google workspace, with unlimited tables as your records grow.</span></li>
+          </ul>
+        </div>
+        <div class="seo-sec">
+          <h2>Start free, then decide</h2>
+          <p>You do not have to take our word for any of this. The follow-up engine inside OneBizOS is available on its own as a <b>free tracker</b> — one sheet, your Drive, no card. Use it for a week. If a free sheet already beats what you had, imagine the full system.</p>
+        </div>
+        <div class="seo-cta">
+          <h2>Never lose your CRM again.</h2>
+          <p>Start with the free follow-up tracker, or get the complete Realtor Business OS today — $49 once, yours for life, in your own Drive.</p>
+          <div class="seo-cta-actions">
+            <a class="button primary" href="#free-tracker" data-ft-open>Get the Free Tracker</a>
+            <a class="button seo-buy" href="https://script.google.com/macros/s/AKfycbwD6qet0JkJ4x-LA6Dmd1yf9aEg-6GeAV5ShEe3RfAWVrgLSZfWiXslvKJMDERb55-S/exec?plan=onebizos">Get OneBizOS — $49 Once</a>
+          </div>
+          <p class="seo-built">Built by Malik Danish Ali, Founder &amp; CEO, OneBizOS</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= SEO PAGE: FOLLOW UP BOSS ALTERNATIVE ================= -->
+  <div class="seo-view" id="seo-follow-up-boss-alternative" hidden>
+    <section class="seo-hero">
+      <div class="container">
+        <a class="seo-back" href="#top" data-seo-close><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 18l-6-6 6-6"/></svg> Back to OneBizOS home</a>
+        <p class="kicker">Follow Up Boss Alternative</p>
+        <h1 class="seo-title">A Follow Up Boss alternative that costs $49 once — not up to $108 every month.</h1>
+        <p class="seo-lede">Follow Up Boss is a capable CRM. The question is what it really costs, and who ends up owning your data. OneBizOS Realtor Business OS gives independent agents the same core system — CRM, pipeline, follow-up, money — for <b>$49 one time</b>, in <b>your own Google Drive</b>.</p>
+      </div>
+    </section>
+    <div class="seo-body">
+      <div class="container">
+        <div class="seo-sec">
+          <h2>The honest Follow Up Boss bill</h2>
+          <p>As listed on Follow Up Boss&rsquo;s public pricing pages, the headline price is <b>$69 per user per month</b>. But the calling features most agents actually need sit in an add-on at <b>$39 extra</b> — taking the real bill to as much as <b>~$108 per user, per month</b>, a breakdown also set out by Prospeo. That is roughly <b>$1,296 per user, every year</b>, for as long as you stay in business — and it stops working the month you stop paying.</p>
+          <p>OneBizOS is $49 once. The same money buys about two weeks of the full Follow Up Boss bill — or a system you own outright, forever.</p>
+        </div>
+        <div class="seo-sec">
+          <h2>And whose data is it, really?</h2>
+          <p>Follow Up Boss is owned by Zillow. As discussed by agents on r/realtors and reported in secondary coverage of that discussion, some agents are uneasy about a marketplace giant sitting behind the CRM that holds their client relationships and lead history. We are not here to tell you what to think about that — only to offer the structural answer: <b>when your system lives in your own Drive, there is no parent company in the middle at all.</b></p>
+        </div>
+        <div class="seo-sec">
+          <h2>What you get instead</h2>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m5 12 4 4L19 6"/></svg><span><b>The same core system</b> — CRM, visual pipeline, tasks, cashflow, commission calculator and reports, connected in one sheet.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m5 12 4 4L19 6"/></svg><span><b>Follow-up dates that turn AMBER and RED</b> — due today, overdue tomorrow, impossible to miss on your morning open.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m5 12 4 4L19 6"/></svg><span><b>One-click WhatsApp follow-up</b> from each lead row — no add-on, no extra $39.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m5 12 4 4L19 6"/></svg><span><b>No subscription, ever</b> — $49 once, lifetime updates included, and it keeps working whether or not you ever pay us again.</span></li>
+          </ul>
+          <p class="seo-note">An honest note: if you run a large team that needs built-in dialers, lead-routing rules and manager dashboards inside one rented platform, Follow Up Boss may still fit you better. OneBizOS is built for independent agents and small teams who want to own their system.</p>
+        </div>
+        <div class="seo-cta">
+          <h2>Keep the system. Drop the rent.</h2>
+          <p>Try the follow-up engine free first — the same one that runs inside OneBizOS — or get the complete system today for $49 once.</p>
+          <div class="seo-cta-actions">
+            <a class="button primary" href="#free-tracker" data-ft-open>Get the Free Tracker</a>
+            <a class="button seo-buy" href="https://script.google.com/macros/s/AKfycbwD6qet0JkJ4x-LA6Dmd1yf9aEg-6GeAV5ShEe3RfAWVrgLSZfWiXslvKJMDERb55-S/exec?plan=onebizos">Get OneBizOS — $49 Once</a>
+          </div>
+          <p class="seo-built">Built by Malik Danish Ali, Founder &amp; CEO, OneBizOS</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= SEO PAGE: REAL ESTATE CRM IN GOOGLE SHEETS ================= -->
+  <div class="seo-view" id="seo-real-estate-crm-google-sheets" hidden>
+    <section class="seo-hero">
+      <div class="container">
+        <a class="seo-back" href="#top" data-seo-close><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 18l-6-6 6-6"/></svg> Back to OneBizOS home</a>
+        <p class="kicker">Real Estate CRM in Google Sheets</p>
+        <h1 class="seo-title">A real estate CRM in Google Sheets: your whole business in one sheet.</h1>
+        <p class="seo-lede">No new app to learn, no subscription to feed. A Google Sheets CRM puts your <b>leads, pipeline and money in one place</b> — a file you already know how to use, that lives in your own Drive and opens on any device.</p>
+      </div>
+    </section>
+    <div class="seo-body">
+      <div class="container">
+        <div class="seo-sec">
+          <h2>The idea, simply</h2>
+          <p>A CRM is just three questions answered at a glance: <b>Who are my leads? Where is each deal? When do I next follow up?</b> Most software wraps those questions in dashboards, logins and monthly fees. A well-built Google Sheet answers them in tabs: one for your leads (the CRM), one that moves deals stage by stage (the pipeline), and one that tracks the money (cashflow and commissions) — all connected, so you update once and everything agrees.</p>
+        </div>
+        <div class="seo-sec">
+          <h2>Why agents end up in Sheets</h2>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m5 12 4 4L19 6"/></svg><span><b>Zero learning curve</b> — if you can type in a spreadsheet, you already know this CRM.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m5 12 4 4L19 6"/></svg><span><b>It is yours</b> — the file sits in your Google Drive. No company can sunset it, raise its rent, or hold it hostage.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m5 12 4 4L19 6"/></svg><span><b>It works everywhere</b> — phone in the car, laptop at the office, the same live sheet.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m5 12 4 4L19 6"/></svg><span><b>No per-user pricing</b> — a sheet does not bill you again for every person who opens it.</span></li>
+          </ul>
+        </div>
+        <div class="seo-sec">
+          <h2>Start with the Lite idea: the follow-up tracker</h2>
+          <p>The simplest useful version of a Sheets CRM is a single follow-up tracker: one row per lead, a column for the next follow-up date, and colors that do the remembering — <b>AMBER when a follow-up is due today, RED when it is overdue</b>. That one tab fixes the most expensive problem in real estate: leads lost to forgotten follow-ups. It is exactly why we give that tracker away free.</p>
+          <p>When you outgrow one tab, the full <b>OneBizOS Realtor Business OS</b> is the same idea grown up: dashboard, CRM, pipeline, tasks, WhatsApp follow-up, cashflow, commissions and reports — still one Google Sheet system, still yours, still $49 once.</p>
+        </div>
+        <div class="seo-cta">
+          <h2>See the Sheets CRM idea working — free.</h2>
+          <p>Get the free follow-up tracker and run your leads from a Google Sheet today. The complete OneBizOS system is there when one tab is no longer enough.</p>
+          <div class="seo-cta-actions">
+            <a class="button primary" href="#free-tracker" data-ft-open>Get the Free Tracker</a>
+            <a class="button seo-buy" href="https://script.google.com/macros/s/AKfycbwD6qet0JkJ4x-LA6Dmd1yf9aEg-6GeAV5ShEe3RfAWVrgLSZfWiXslvKJMDERb55-S/exec?plan=onebizos">Get OneBizOS — $49 Once</a>
+          </div>
+          <p class="seo-built">Built by Malik Danish Ali, Founder &amp; CEO, OneBizOS</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= SEO PAGE: LEAD TRACKING SPREADSHEET ================= -->
+  <div class="seo-view" id="seo-lead-tracking-spreadsheet" hidden>
+    <section class="seo-hero">
+      <div class="container">
+        <a class="seo-back" href="#top" data-seo-close><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 18l-6-6 6-6"/></svg> Back to OneBizOS home</a>
+        <p class="kicker">Real Estate Lead Tracking Spreadsheet</p>
+        <h1 class="seo-title">The real estate lead tracking spreadsheet that never lets a follow-up slip.</h1>
+        <p class="seo-lede">Most agents do not have a lead problem — they have a <b>follow-up problem</b>. Here is the simple spreadsheet method that fixes it: one row per lead, one date that matters, and colors that nag so you do not have to remember.</p>
+      </div>
+    </section>
+    <div class="seo-body">
+      <div class="container">
+        <div class="seo-sec">
+          <h2>Step 1: the columns (keep it to these)</h2>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m5 12 4 4L19 6"/></svg><span><b>Lead name &amp; phone</b> — who they are and how to reach them in one tap.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m5 12 4 4L19 6"/></svg><span><b>Buyer or seller, and source</b> — so you know what they want and where they came from.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m5 12 4 4L19 6"/></svg><span><b>Last contact</b> — the date you last actually spoke, not the date you meant to.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m5 12 4 4L19 6"/></svg><span><b>Next follow-up</b> — the single most important column on the sheet (see Step 2).</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m5 12 4 4L19 6"/></svg><span><b>Status</b> — a simple dropdown: new, in conversation, viewing booked, offer, closed, cold.</span></li>
+          </ul>
+        </div>
+        <div class="seo-sec">
+          <h2>Step 2: the one rule — every row always has a date</h2>
+          <p>Every conversation ends the same way: <b>before you close the sheet, the lead gets a next follow-up date.</b> No date means the lead is invisible, and invisible leads are the ones that buy from someone else. A lead without a next step is not &ldquo;being nurtured&rdquo; — it is being forgotten, politely.</p>
+        </div>
+        <div class="seo-sec">
+          <h2>Step 3: let colors do the nagging — AMBER today, RED overdue</h2>
+          <p>Now the sheet starts working for you. Format the follow-up column so a date that is <b>due today turns AMBER</b>, and a date that has <b>slipped past turns RED</b>. Your morning routine becomes ten seconds long: open the sheet, call the AMBERs, rescue the REDs. No reminders to set, no app notifications to configure — the color is the system.</p>
+          <p>Doing the conditional formatting by hand is fiddly, which is why our free tracker ships with all of it built in — the columns, the dropdowns and the AMBER/RED rules, ready in your own Drive.</p>
+        </div>
+        <div class="seo-cta">
+          <h2>Skip the setup. Take the finished tracker — free.</h2>
+          <p>The OneBizOS Lite Follow-Up Tracker is this exact method, already built: columns, dropdowns, AMBER/RED dates and a START HERE tab. Free forever, in your own Google Drive.</p>
+          <div class="seo-cta-actions">
+            <a class="button primary" href="#free-tracker" data-ft-open>Get the Free Tracker</a>
+            <a class="button seo-buy" href="https://script.google.com/macros/s/AKfycbwD6qet0JkJ4x-LA6Dmd1yf9aEg-6GeAV5ShEe3RfAWVrgLSZfWiXslvKJMDERb55-S/exec?plan=onebizos">Get OneBizOS — $49 Once</a>
+          </div>
+          <p class="seo-built">Built by Malik Danish Ali, Founder &amp; CEO, OneBizOS</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= SEO PAGE: CHEAP REAL ESTATE CRM ================= -->
+  <div class="seo-view" id="seo-cheap-real-estate-crm" hidden>
+    <section class="seo-hero">
+      <div class="container">
+        <a class="seo-back" href="#top" data-seo-close><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 18l-6-6 6-6"/></svg> Back to OneBizOS home</a>
+        <p class="kicker">Cheap Real Estate CRM</p>
+        <h1 class="seo-title">Cheap real estate CRM, honestly compared: what &ldquo;cheap&rdquo; really costs per year.</h1>
+        <p class="seo-lede">A $49/month CRM is not cheap — it is <b>$588 every year, forever</b>. Here is the honest comparison agents ask us for, with every price attributed to where it was published, and the one option that is simply <b>$49 once</b>.</p>
+      </div>
+    </section>
+    <div class="seo-body">
+      <div class="container">
+        <div class="seo-sec">
+          <h2>The comparison</h2>
+          <div class="seo-tablewrap">
+            <table class="seo-table">
+              <thead>
+                <tr><th>CRM</th><th>What you actually pay</th><th>The honest note</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><b>Follow Up Boss</b></td><td>~$108/user/month with the calling add-on (~$1,296/year)</td><td>$69/user advertised, calling add-on $39 extra — as listed on its public pricing pages and broken down by Prospeo.</td></tr>
+                <tr><td><b>Wise Agent</b></td><td>$49/month ($588/year)</td><td>As listed on Wise Agent&rsquo;s own pricing page. A fair tool — but the meter never stops.</td></tr>
+                <tr><td><b>kvCORE</b></td><td>Quote-gated — no public pricing; ~$499/month as reported by third parties</td><td>That figure is <b>directional</b>, reported by third parties, not published by kvCORE. Powerful, team-priced, and you will need a sales call to learn your real number.</td></tr>
+                <tr class="seo-us"><td><b>OneBizOS</b></td><td><b>$49 once</b> — $49 in year one, $0 after</td><td>No subscription, no per-user pricing, lifetime updates included, and the system lives in your own Google Drive.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="seo-note">Prices as published or reported at the time of writing; check each vendor&rsquo;s pricing page for their current figures. kvCORE&rsquo;s figure is directional only, as labelled above.</p>
+        </div>
+        <div class="seo-sec">
+          <h2>Do the 3-year math</h2>
+          <p>Over three years, the &ldquo;cheap&rdquo; $49/month option costs <b>$1,764</b>. Follow Up Boss at ~$108/month costs about <b>$3,888</b> per user. OneBizOS costs <b>$49</b> — total, for the same three years and every year after. Cheap is not a monthly price. Cheap is a price that stops.</p>
+        </div>
+        <div class="seo-sec">
+          <h2>What the $49 actually buys</h2>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m5 12 4 4L19 6"/></svg><span><b>The complete Realtor Business OS</b> — dashboard, CRM, pipeline, tasks, WhatsApp follow-up, cashflow, commissions and reports in one Google Sheets system.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m5 12 4 4L19 6"/></svg><span><b>Lifetime updates + basic support</b> included — improvements are yours, not a higher tier.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m5 12 4 4L19 6"/></svg><span><b>Your data in your Drive</b> — no lock-in, no sunset risk, unlimited tables.</span></li>
+          </ul>
+          <p class="seo-note">An honest note: platform CRMs earn their price for large teams that need built-in dialers, lead marketplaces and manager reporting. If that is you, pay it with open eyes. If you are an independent agent or small team, the math above is the whole argument.</p>
+        </div>
+        <div class="seo-cta">
+          <h2>The cheapest CRM is the one you stop paying for.</h2>
+          <p>Start with the free follow-up tracker, or own the complete system today — $49 once, and the meter never runs again.</p>
+          <div class="seo-cta-actions">
+            <a class="button primary" href="#free-tracker" data-ft-open>Get the Free Tracker</a>
+            <a class="button seo-buy" href="https://script.google.com/macros/s/AKfycbwD6qet0JkJ4x-LA6Dmd1yf9aEg-6GeAV5ShEe3RfAWVrgLSZfWiXslvKJMDERb55-S/exec?plan=onebizos">Get OneBizOS — $49 Once</a>
+          </div>
+          <p class="seo-built">Built by Malik Danish Ali, Founder &amp; CEO, OneBizOS</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- ================= FOOTER ================= -->
   <footer id="contact">
     <div class="container">
@@ -910,6 +1185,7 @@
           <a href="#" data-legal="refund">Refund Policy</a>
         </div>
       </div>
+      <div class="seo-foot-row"><b>Alternatives</b><a href="#liondesk-alternative" data-seo-open="liondesk-alternative">LionDesk Alternative</a><span class="sep">·</span><a href="#follow-up-boss-alternative" data-seo-open="follow-up-boss-alternative">Follow Up Boss Alternative</a><span class="sep">·</span><a href="#real-estate-crm-google-sheets" data-seo-open="real-estate-crm-google-sheets">Real Estate CRM in Google Sheets</a><span class="sep">·</span><a href="#lead-tracking-spreadsheet" data-seo-open="lead-tracking-spreadsheet">Lead Tracking Spreadsheet</a><span class="sep">·</span><a href="#cheap-real-estate-crm" data-seo-open="cheap-real-estate-crm">Cheap Real Estate CRM</a></div>
       <div class="footer-row"><span>© 2026 OneBizOS. All rights reserved.</span><span>Your entire business. One OS.</span></div>
     </div>
   </footer>
@@ -1957,6 +2233,86 @@
           if(openBtn){openBtn.focus();}
         });
       }
+    })();
+  </script>
+  <script>
+    /* SEO pages — additive views (Qadam 6). Same view-switch pattern as the
+       Free Tracker page: hash routes, main hidden while a page is open.
+       Coexists with the Free Tracker router: opening the tracker from an
+       SEO page hands over cleanly, and vice versa. Checkout links are
+       untouched (the site's existing checkout modal handler picks them up). */
+    (function(){
+      var SLUGS=['liondesk-alternative','follow-up-boss-alternative','real-estate-crm-google-sheets','lead-tracking-spreadsheet','cheap-real-estate-crm'];
+      var main=document.getElementById('main');
+      if(!main){return;}
+      var views={};
+      SLUGS.forEach(function(s){views[s]=document.getElementById('seo-'+s);});
+      var openSlug=null,savedY=0;
+
+      function closeMobileMenu(){
+        var l=document.querySelector('.nav-links');
+        var b=document.querySelector('.menu-btn');
+        if(l){l.classList.remove('open');}
+        if(b){b.setAttribute('aria-expanded','false');}
+      }
+      function hideAllViews(){
+        SLUGS.forEach(function(s){if(views[s]){views[s].hidden=true;}});
+      }
+      function showSeo(slug,push){
+        var v=views[slug];
+        if(!v){return;}
+        if(openSlug===slug){window.scrollTo(0,0);return;}
+        if(!openSlug){savedY=window.scrollY||0;}
+        hideAllViews();
+        v.hidden=false;
+        openSlug=slug;
+        main.hidden=true;
+        document.body.classList.add('seo-open');
+        window.scrollTo(0,0);
+        if(push){try{history.pushState({seo:slug},'','#'+slug);}catch(e){}}
+      }
+      function hideSeo(push){
+        if(!openSlug){return;}
+        hideAllViews();
+        openSlug=null;
+        main.hidden=false;
+        document.body.classList.remove('seo-open');
+        window.scrollTo(0,savedY);
+        if(push){try{history.pushState(null,'',window.location.pathname+window.location.search);}catch(e){}}
+      }
+      /* Capture phase, registered after the Free Tracker router: its handler
+         runs first for tracker links, then we close the SEO view underneath. */
+      document.addEventListener('click',function(e){
+        var t=e.target.closest?e.target.closest('[data-seo-open],[data-seo-close]'):null;
+        if(t){
+          e.preventDefault();
+          e.stopPropagation();
+          closeMobileMenu();
+          if(t.hasAttribute('data-seo-open')){showSeo(t.getAttribute('data-seo-open'),true);}
+          else{hideSeo(true);window.scrollTo(0,0);}
+          return;
+        }
+        if(!openSlug){return;}
+        var ft=e.target.closest?e.target.closest('[data-ft-open]'):null;
+        if(ft){
+          /* Free Tracker router (earlier listener) has already opened the
+             tracker and hidden main; just close the SEO view underneath. */
+          hideAllViews();
+          openSlug=null;
+          document.body.classList.remove('seo-open');
+          return;
+        }
+        var a=e.target.closest?e.target.closest('a[href^="#"]'):null;
+        if(a&&a.getAttribute('href').length>1){hideSeo(false);}
+      },true);
+      function syncFromHash(){
+        var h=window.location.hash.replace('#','');
+        if(SLUGS.indexOf(h)>-1){showSeo(h,false);}
+        else if(openSlug){hideSeo(false);}
+      }
+      window.addEventListener('popstate',syncFromHash);
+      window.addEventListener('hashchange',syncFromHash);
+      syncFromHash();
     })();
   </script>
 </body>
