@@ -235,7 +235,13 @@
     .price-card h3{font-size:22px;margin-bottom:8px}.price-card>p{color:var(--muted);font-size:14px;min-height:45px}.price-card.featured>p{color:#afbed0}.price{display:flex;align-items:end;gap:7px;margin:18px 0 5px}.price strong{font:800 42px/.95 "Manrope"}.price span{color:var(--faint);font-size:13px;margin-bottom:5px}.old{color:var(--faint);text-decoration:line-through;font-size:13px;min-height:21px}.includes{list-style:none;padding:16px 0 20px;margin:14px 0 0;border-top:1px solid var(--line);flex:1}.featured .includes{border-color:#2b4360}.includes li{display:flex;gap:9px;font-size:13px;padding:6px 0;color:var(--muted)}.featured .includes li{color:#c2cedd}.includes svg{width:16px;flex:0 0 auto;color:var(--green);margin-top:3px}.price-card .button{width:100%}.featured .button.secondary{background:var(--gold);border-color:var(--gold);color:#07172b}.featured .button.secondary:hover{background:var(--gold-2)}
     .price-card{cursor:pointer}
     .price-card.selected{border-color:var(--gold);box-shadow:0 0 0 2px var(--gold),0 22px 55px rgba(201,162,39,.45)}
-    .pricing-note{text-align:center;margin:30px auto 0;color:var(--faint);font-size:13px}
+    .pricing-note{text-align:center;margin:30px auto 0;color:var(--faint);font-size:13px;max-width:760px;line-height:1.65}
+    .pricing-note.payoneer{color:var(--muted);font-size:14px}
+    .sample-badge{display:inline-flex;align-items:center;font:700 8.5px/1 "Manrope";letter-spacing:.09em;text-transform:uppercase;color:#e2bf4b;border:1px solid rgba(226,191,75,.45);background:rgba(201,162,39,.12);padding:4px 7px;border-radius:999px;white-space:nowrap}
+    .board-head .sample-badge{margin-left:auto;margin-right:10px}
+    body.legal-open .mobile-buy{display:none}
+    .legal-view{background:var(--bg)}
+    .legal-updated{margin-top:28px;padding-top:18px;border-top:1px solid var(--line);font-size:13px!important;color:var(--faint)!important}
 
     /* ---------- FAQ ---------- */
     .faq{background:var(--surface-2)}.faq-grid{display:grid;grid-template-columns:.72fr 1.28fr;gap:75px}.faq-title h2{font-size:clamp(36px,4.5vw,55px);line-height:1.05;margin-bottom:18px}.faq-title p{color:var(--muted)}.faq-title a{color:var(--ink);font-weight:700;text-decoration-color:var(--gold);text-underline-offset:4px}.faq-list{border-top:1px solid var(--line)}.faq-item{border-bottom:1px solid var(--line)}.faq-q{width:100%;background:transparent;color:var(--ink);border:0;padding:22px 0;display:flex;justify-content:space-between;align-items:center;text-align:left;font-weight:700;cursor:pointer}.faq-q svg{width:18px;transition:transform .25s;flex:0 0 auto}.faq-a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .25s}.faq-a>div{overflow:hidden}.faq-a p{color:var(--muted);margin:0;padding:0 40px 22px 0}.faq-item.open .faq-a{grid-template-rows:1fr}.faq-item.open .faq-q svg{transform:rotate(45deg)}
@@ -629,8 +635,8 @@
                 </nav>
               </aside>
               <div class="dash-main">
-                <div class="dash-head"><h3>Command Center</h3><span class="dash-cta">+ NEW LEAD</span></div>
-                <div class="kpis"><div class="kpi blue"><small>ACTIVE LEADS</small><strong data-count="24" data-format="plain">0</strong></div><div class="kpi gold"><small>EXPECTED COMMISSION</small><strong data-count="18400" data-format="money">0</strong></div><div class="kpi"><small>PIPELINE VALUE</small><strong data-count="920" data-format="moneyk">0</strong></div></div>
+                <div class="dash-head"><h3>Command Center</h3><span class="sample-badge">Sample data</span><span class="dash-cta">+ NEW LEAD</span></div>
+                <div class="kpis"><div class="kpi blue"><small>ACTIVE LEADS</small><strong data-count="24" data-format="plain">24</strong></div><div class="kpi gold"><small>EXPECTED COMMISSION</small><strong data-count="18400" data-format="money">$18,400</strong></div><div class="kpi"><small>PIPELINE VALUE</small><strong data-count="920" data-format="moneyk">$920k</strong></div></div>
                 <div class="dash-lower">
                   <div class="chart"><div class="mini-title">DEALS CLOSED — LAST 7 MONTHS</div><div class="bars" aria-hidden="true"><i style="--h:34%;--bd:.05s"></i><i style="--h:48%;--bd:.16s"></i><i style="--h:42%;--bd:.27s"></i><i style="--h:62%;--bd:.38s"></i><i style="--h:56%;--bd:.49s"></i><i style="--h:78%;--bd:.6s"></i><i class="gold" style="--h:96%;--bd:.71s"></i></div><div class="bar-labels" aria-hidden="true"><span>MAR</span><span>APR</span><span>MAY</span><span>JUN</span><span>JUL</span><span>AUG</span><span>SEP</span></div></div>
                   <div class="pipe"><div class="mini-title">RECENT LEADS</div><div class="pipe-row"><span><b>New inquiry</b><br>Apartment</span><span class="status hot">HOT</span></div><div class="pipe-row"><span><b>Viewing done</b><br>Villa</span><span class="status won">WON</span></div><div class="pipe-row"><span><b>Follow-up</b><br>Office</span><span class="status hot">TODAY</span></div></div>
@@ -672,7 +678,7 @@
               <a class="button secondary" href="#system">See what&rsquo;s inside</a>
             </div>
           </div>
-          <div class="board reveal" style="--d:.12s" aria-label="Pipeline Kanban preview"><div class="board-head"><h3>Sales pipeline</h3><span>$920,000 TOTAL</span></div><div class="kanban"><div><div class="kan-col-title"><span>NEW LEAD</span><span>3</span></div><div class="kan-card"><b>Downtown apartment</b><small>Referral · Today</small><span class="amt">$280,000</span><div class="progress"><i style="width:22%"></i></div></div><div class="kan-card"><b>Family villa</b><small>Website · Today</small><span class="amt">$410,000</span><div class="progress"><i style="width:28%"></i></div></div></div><div><div class="kan-col-title"><span>VIEWING</span><span>2</span></div><div class="kan-card"><b>Marina residence</b><small>Viewing booked</small><span class="amt">$155,000</span><div class="progress"><i style="width:55%"></i></div></div><div class="kan-card"><b>Business office</b><small>Documents shared</small><span class="amt">$75,000</span><div class="progress"><i style="width:66%"></i></div></div></div><div><div class="kan-col-title"><span>CLOSING</span><span>1</span></div><div class="kan-card"><b>Retail unit</b><small>Final approval</small><span class="amt">$120,000</span><div class="progress green"><i style="width:90%"></i></div></div></div></div></div>
+          <div class="board reveal" style="--d:.12s" aria-label="Pipeline Kanban preview"><div class="board-head"><h3>Sales pipeline</h3><span class="sample-badge">Sample data</span><span>$920,000 TOTAL</span></div><div class="kanban"><div><div class="kan-col-title"><span>NEW LEAD</span><span>3</span></div><div class="kan-card"><b>Downtown apartment</b><small>Referral · Today</small><span class="amt">$280,000</span><div class="progress"><i style="width:22%"></i></div></div><div class="kan-card"><b>Family villa</b><small>Website · Today</small><span class="amt">$410,000</span><div class="progress"><i style="width:28%"></i></div></div></div><div><div class="kan-col-title"><span>VIEWING</span><span>2</span></div><div class="kan-card"><b>Marina residence</b><small>Viewing booked</small><span class="amt">$155,000</span><div class="progress"><i style="width:55%"></i></div></div><div class="kan-card"><b>Business office</b><small>Documents shared</small><span class="amt">$75,000</span><div class="progress"><i style="width:66%"></i></div></div></div><div><div class="kan-col-title"><span>CLOSING</span><span>1</span></div><div class="kan-card"><b>Retail unit</b><small>Final approval</small><span class="amt">$120,000</span><div class="progress green"><i style="width:90%"></i></div></div></div></div></div>
         </div>
 
         <div class="products-head reveal">
@@ -716,7 +722,7 @@
           <article class="system reveal"><div class="system-number">05 / FINANCE</div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M17 6.5c0-1.4-2.2-2.5-5-2.5S7 5.1 7 6.5 9.2 9 12 9s5 1.1 5 2.5S14.8 14 12 14s-5 1.1-5 2.5S9.2 19 12 19s5-1.1 5-2.5"/></svg><h3>Cashflow tracker</h3><p>Monitor money in, money out and the financial movement behind daily operations.</p></article>
           <article class="system reveal" style="--d:.06s"><div class="system-number">06 / EARNINGS</div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 15 16 7M9 8h.01M15 16h.01"/></svg><h3>Commission calculator</h3><p>Set your own rate and let expected commissions update with your deal pipeline.</p></article>
           <article class="system reveal" style="--d:.12s"><div class="system-number">07 / REPORTING</div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><h3>Reports &amp; charts</h3><p>Turn activity into readable sales trends and a clean one-page printable summary.</p></article>
-          <article class="system reveal" style="--d:.18s"><div class="system-number">08 / ACCESS</div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg><h3>License &amp; portal</h3><p>License validation, buyer watermarking and a read-only client portal support controlled access.</p></article>
+          <article class="system reveal" style="--d:.18s"><div class="system-number">08 / ACCESS</div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg><h3>License &amp; portal</h3><p>Your data and your system live in your own Drive. A lightweight license check confirms your key. A read-only client portal supports controlled access.</p></article>
         </div>
       </div>
     </section>
@@ -768,12 +774,13 @@
     <!-- ================= PRICING ================= -->
     <section class="price-section" id="pricing">
       <div class="container">
-        <div class="pricing-intro reveal"><p class="kicker">Pricing</p><h2>Own the system.<br>Skip the subscription.</h2><p>Choose the license, the hands-on setup, or the complete package. Straightforward one-time pricing with no recurring software fee.</p></div>
+        <div class="pricing-intro reveal"><p class="kicker">Pricing</p><h2>Own the system.<br>Skip the subscription.</h2><p>Get your license, the hands-on setup, or the complete package. Straightforward one-time pricing with no recurring software fee.</p></div>
         <div class="pricing">
-          <article class="price-card reveal"><h3>OneBizOS License</h3><p>The complete Realtor Business OS, ready for your business.</p><div class="price"><strong>$49</strong><span>one time</span></div><div class="old">$125</div><ul class="includes"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Complete business system</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Lifetime updates</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Basic support included</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Setup guide</li></ul><a class="button secondary" href="https://script.google.com/macros/s/AKfycbwD6qet0JkJ4x-LA6Dmd1yf9aEg-6GeAV5ShEe3RfAWVrgLSZfWiXslvKJMDERb55-S/exec?plan=onebizos">Choose License</a></article>
-          <article class="price-card featured reveal" style="--d:.1s"><span class="best">RECOMMENDED</span><h3>Complete Bundle</h3><p>The OneBizOS License plus personalized setup for a ready-to-run start.</p><div class="price"><strong>$120</strong><span>one time</span></div><div class="old">$148</div><ul class="includes"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Everything in the License</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Personalized configuration</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Template and setup guide</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Setup scheduling</li></ul><a class="button secondary" href="https://script.google.com/macros/s/AKfycbwD6qet0JkJ4x-LA6Dmd1yf9aEg-6GeAV5ShEe3RfAWVrgLSZfWiXslvKJMDERb55-S/exec?plan=bundle">Get the Complete Bundle</a></article>
-          <article class="price-card reveal" style="--d:.2s"><h3>Personalized Setup</h3><p>Configuration service for an existing OneBizOS license.</p><div class="price"><strong>$99</strong><span>flat fee</span></div><div class="old">$149</div><ul class="includes"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Business-specific setup</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Currency and commission setup</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Pipeline configuration</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Setup scheduling</li></ul><a class="button secondary" href="https://script.google.com/macros/s/AKfycbwD6qet0JkJ4x-LA6Dmd1yf9aEg-6GeAV5ShEe3RfAWVrgLSZfWiXslvKJMDERb55-S/exec?plan=setup">Book Setup</a></article>
+          <article class="price-card reveal"><h3>OneBizOS License</h3><p>The complete Realtor Business OS, ready for your business.</p><div class="price"><strong>$49</strong><span>one time</span></div><ul class="includes"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Complete business system</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Lifetime updates</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Basic support included</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Setup guide</li></ul><a class="button secondary" href="https://script.google.com/macros/s/AKfycbwD6qet0JkJ4x-LA6Dmd1yf9aEg-6GeAV5ShEe3RfAWVrgLSZfWiXslvKJMDERb55-S/exec?plan=onebizos">Get your License</a></article>
+          <article class="price-card featured reveal" style="--d:.1s"><span class="best">RECOMMENDED</span><h3>Complete Bundle</h3><p>The OneBizOS License plus personalized setup for a ready-to-run start.</p><div class="price"><strong>$120</strong><span>one time</span></div><ul class="includes"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Everything in the License</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Personalized configuration</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Template and setup guide</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Setup scheduling</li></ul><a class="button secondary" href="https://script.google.com/macros/s/AKfycbwD6qet0JkJ4x-LA6Dmd1yf9aEg-6GeAV5ShEe3RfAWVrgLSZfWiXslvKJMDERb55-S/exec?plan=bundle">Get your Complete Bundle</a></article>
+          <article class="price-card reveal" style="--d:.2s"><h3>Personalized Setup</h3><p>Configuration service for an existing OneBizOS license.</p><div class="price"><strong>$99</strong><span>flat fee</span></div><ul class="includes"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Business-specific setup</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Currency and commission setup</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Pipeline configuration</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Setup scheduling</li></ul><a class="button secondary" href="https://script.google.com/macros/s/AKfycbwD6qet0JkJ4x-LA6Dmd1yf9aEg-6GeAV5ShEe3RfAWVrgLSZfWiXslvKJMDERb55-S/exec?plan=setup">Get your Personalized Setup</a></article>
         </div>
+        <p class="pricing-note payoneer reveal">Payment via Payoneer. After payment is confirmed, your license is delivered within 24 hours. Pay with the same name/email you used in this order, or upload your payment screenshot so we can match it.</p>
         <p class="pricing-note reveal">The personalized setup service requires an active OneBizOS license. Checkout opens to begin your order.</p>
       </div>
     </section>
@@ -789,6 +796,9 @@
           <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span>Is there a limit on leads or records?</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button><div class="faq-a"><div><p>The data tables are not capped. You can continue adding records as your business grows.</p></div></div></div>
           <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span>What is included in personalized setup?</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button><div class="faq-a"><div><p>Personalized setup configures the system around your business, including core preferences, currency, commission and pipeline structure. It is available as a $99 flat service or inside the $120 Complete Bundle.</p></div></div></div>
           <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span>How does WhatsApp follow-up work?</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button><div class="faq-a"><div><p>Each lead row includes a one-click action that opens a prepared WhatsApp follow-up, helping you move from tracking to conversation faster.</p></div></div></div>
+          <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span>What if I lose my license key?</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button><div class="faq-a"><div><p>If you lose your license key, contact us from your checkout email and we will re-issue it once, free of charge.</p></div></div></div>
+          <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span>Where does my data live?</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button><div class="faq-a"><div><p>Your data and your system live in your own Drive. A lightweight license check confirms your key.</p></div></div></div>
+          <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span>How do I pay?</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button><div class="faq-a"><div><p>Payment via Payoneer. After payment is confirmed, your license is delivered within 24 hours. Pay with the same name/email you used in this order, or upload your payment screenshot so we can match it.</p></div></div></div>
         </div>
       </div>
     </section>
@@ -1147,6 +1157,80 @@
     </div>
   </div>
 
+
+  <!-- ================= LEGAL PAGE: ABOUT ================= -->
+  <div class="seo-view legal-view" id="legal-about" hidden>
+    <section class="seo-hero"><div class="container">
+      <a class="seo-back" href="#top" data-legal-close><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 18l-6-6 6-6"/></svg> Back to OneBizOS home</a>
+      <p class="kicker">About Us</p>
+      <h1 class="seo-title">About OneBizOS</h1>
+      <p class="seo-lede">OneBizOS builds premium business operating systems for small businesses and independent professionals — software that quietly runs the whole business, beautifully.</p>
+    </div></section>
+    <div class="seo-body"><div class="container">
+      <div class="seo-sec"><p>Most business software rents itself to you: a monthly fee, charged forever, for tools you never truly own. We started OneBizOS with a different belief — that powerful tools should be sold fairly, owned outright, and improved for life. No subscriptions. No features held hostage. No bloat.</p></div>
+      <div class="seo-sec"><h2>Our flagship</h2><p>Realtor Business OS is our first product: a complete operating system for real estate professionals that connects CRM, pipeline, tasks, cashflow, commissions, and reporting in one calm workspace. It is the first of a growing family of OneBizOS systems, each crafted for a specific profession to the same standard.</p></div>
+      <div class="seo-sec"><h2>How we work</h2><p>We are a small team by design. Every product is built carefully, tested honestly, and described exactly as it is — if a page on this website says a product does something, it does it.</p><p>Your data and your system live in your own Drive. A lightweight license check confirms your key.</p></div>
+      <div class="seo-sec"><p class="legal-updated">Talk to us any time: <a href="mailto:hello.onebizos@gmail.com">hello.onebizos@gmail.com</a></p></div>
+    </div></div>
+  </div>
+
+  <!-- ================= LEGAL PAGE: PRIVACY ================= -->
+  <div class="seo-view legal-view" id="legal-privacy" hidden>
+    <section class="seo-hero"><div class="container">
+      <a class="seo-back" href="#top" data-legal-close><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 18l-6-6 6-6"/></svg> Back to OneBizOS home</a>
+      <p class="kicker">Privacy Policy</p>
+      <h1 class="seo-title">Privacy Policy</h1>
+      <p class="seo-lede">Your information belongs to you. We collect only what we need to serve you — and nothing we collect is ever for sale.</p>
+    </div></section>
+    <div class="seo-body"><div class="container">
+      <div class="seo-sec"><h2>What we collect</h2><p>When you purchase a OneBizOS product, we collect your <b>name</b>, the <b>email address</b> you provide at checkout, and — where you upload one so we can match your payment — your <b>payment-proof screenshot</b>.</p><p>We do not ask for more, because we do not need more.</p></div>
+      <div class="seo-sec"><h2>How we use it</h2><p>We use your name, email address and, where provided, your payment-proof screenshot only for:</p><ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m5 12 4 4L19 6"/></svg><span><b>Delivery</b> — sending your license and product to you.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m5 12 4 4L19 6"/></svg><span><b>License validation</b> — confirming your key when you open your system.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m5 12 4 4L19 6"/></svg><span><b>Payment matching</b> — matching your Payoneer payment or payment-proof screenshot to your order.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m5 12 4 4L19 6"/></svg><span><b>Product updates</b> — sending you the updates your purchase includes.</span></li>
+      </ul></div>
+      <div class="seo-sec"><h2>What we never do</h2><p>We do not sell, rent, share, or trade your personal information — to advertisers, data brokers, or anyone else. We do not use your email address to market third-party products, and this website does not track you across the internet.</p></div>
+      <div class="seo-sec"><h2>Payments</h2><p>Payment via Payoneer. After payment is confirmed, your license is delivered within 24 hours. Pay with the same name/email you used in this order, or upload your payment screenshot so we can match it.</p></div>
+      <div class="seo-sec"><h2>Your control</h2><p>If you would like your information corrected or removed from our records, write to us at <a href="mailto:hello.onebizos@gmail.com">hello.onebizos@gmail.com</a> and we will take care of it promptly. Please note that removing your email also removes our ability to deliver your updates and validate your license — so we will always confirm with you before removing it.</p><p class="legal-updated">Last updated: October 2026 · Questions about this policy? <a href="mailto:hello.onebizos@gmail.com">hello.onebizos@gmail.com</a></p></div>
+    </div></div>
+  </div>
+
+  <!-- ================= LEGAL PAGE: TERMS ================= -->
+  <div class="seo-view legal-view" id="legal-terms" hidden>
+    <section class="seo-hero"><div class="container">
+      <a class="seo-back" href="#top" data-legal-close><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 18l-6-6 6-6"/></svg> Back to OneBizOS home</a>
+      <p class="kicker">Terms of Service</p>
+      <h1 class="seo-title">Terms of Service</h1>
+      <p class="seo-lede">Straightforward terms, in plain language. We would rather earn your trust than hide behind fine print.</p>
+    </div></section>
+    <div class="seo-body"><div class="container">
+      <div class="seo-sec"><h2>One-time payment</h2><p>Every OneBizOS product is sold for a single one-time payment. There is no subscription, no monthly fee, and no recurring charge of any kind. The price shown at checkout is the complete price of the product.</p><p>Payment via Payoneer. After payment is confirmed, your license is delivered within 24 hours. Pay with the same name/email you used in this order, or upload your payment screenshot so we can match it.</p></div>
+      <div class="seo-sec"><h2>Your license</h2><p>Your purchase includes a license for one buyer — you — to use the product within your own business. The license is issued to the purchasing customer and may not be resold, redistributed, sublicensed, or shared with other businesses.</p></div>
+      <div class="seo-sec"><h2>Lost or replaced license keys</h2><p>If you lose your license key, contact us from your checkout email and we will re-issue it once, free of charge.</p></div>
+      <div class="seo-sec"><h2>Lifetime updates</h2><p>Every license includes lifetime updates to the product purchased, at no additional cost. When we release an improvement to your product, it is yours — that is part of what you paid for.</p></div>
+      <div class="seo-sec"><h2>What you are buying</h2><p>OneBizOS products are business operating systems built on Google Sheets, with automation powered by Google Apps Script. A free Google account is required to use them.</p><p>Your data and your system live in your own Drive. A lightweight license check confirms your key.</p></div>
+      <div class="seo-sec"><h2>Support</h2><p>Basic support is included with every license. If something does not work as described, contact us at <a href="mailto:hello.onebizos@gmail.com">hello.onebizos@gmail.com</a> and we will put it right.</p></div>
+      <div class="seo-sec"><h2>Refunds</h2><p>Refunds are governed by our <a href="#refund" data-legal-open="refund">Refund Policy</a>: if the product is not as described, you may request a full refund within 7 days of purchase.</p><p class="legal-updated">Last updated: October 2026 · Questions about these terms? <a href="mailto:hello.onebizos@gmail.com">hello.onebizos@gmail.com</a></p></div>
+    </div></div>
+  </div>
+
+  <!-- ================= LEGAL PAGE: REFUND ================= -->
+  <div class="seo-view legal-view" id="legal-refund" hidden>
+    <section class="seo-hero"><div class="container">
+      <a class="seo-back" href="#top" data-legal-close><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 18l-6-6 6-6"/></svg> Back to OneBizOS home</a>
+      <p class="kicker">Refund Policy</p>
+      <h1 class="seo-title">Refund Policy</h1>
+      <p class="seo-lede">Buy with confidence. If what you receive is not what we described, you should not have to pay for it.</p>
+    </div></section>
+    <div class="seo-body"><div class="container">
+      <div class="seo-sec"><h2>The 7-day promise</h2><p>If the product you receive is not as described on this website, contact us within 7 days of your purchase and we will refund you in full. No forms to complete, no exit interviews, no hard feelings.</p></div>
+      <div class="seo-sec"><h2>How to request a refund</h2><p>Send one email to <a href="mailto:hello.onebizos@gmail.com">hello.onebizos@gmail.com</a> from the email address you used at checkout, and briefly tell us what was different from the description. We may ask a short question so we can fix the issue for future customers — but your refund never depends on your answers.</p></div>
+      <div class="seo-sec"><h2>How refunds are paid</h2><p>Approved refunds are issued to your original payment method. Once a refund is issued, the time it takes to appear in your account is set by your payment provider and bank.</p></div>
+      <div class="seo-sec"><h2>After a refund</h2><p>When a refund is completed, the license is deactivated and the product should be removed from your workspace. If you would like to buy again in the future, you will be welcome.</p><p class="legal-updated">Last updated: October 2026 · Request a refund or ask a question: <a href="mailto:hello.onebizos@gmail.com">hello.onebizos@gmail.com</a></p></div>
+    </div></div>
+  </div>
+
   <!-- ================= FOOTER ================= -->
   <footer id="contact">
     <div class="container">
@@ -1179,85 +1263,16 @@
         </div>
         <div class="footer-col">
           <h4>Company &amp; Legal</h4>
-          <a href="#" data-legal="about">About Us</a>
-          <a href="#" data-legal="privacy">Privacy Policy</a>
-          <a href="#" data-legal="terms">Terms of Service</a>
-          <a href="#" data-legal="refund">Refund Policy</a>
+          <a href="#about" data-legal-open="about">About Us</a>
+          <a href="#privacy" data-legal-open="privacy">Privacy Policy</a>
+          <a href="#terms" data-legal-open="terms">Terms of Service</a>
+          <a href="#refund" data-legal-open="refund">Refund Policy</a>
         </div>
       </div>
       <div class="seo-foot-row"><b>Alternatives</b><a href="#liondesk-alternative" data-seo-open="liondesk-alternative">LionDesk Alternative</a><span class="sep">·</span><a href="#follow-up-boss-alternative" data-seo-open="follow-up-boss-alternative">Follow Up Boss Alternative</a><span class="sep">·</span><a href="#real-estate-crm-google-sheets" data-seo-open="real-estate-crm-google-sheets">Real Estate CRM in Google Sheets</a><span class="sep">·</span><a href="#lead-tracking-spreadsheet" data-seo-open="lead-tracking-spreadsheet">Lead Tracking Spreadsheet</a><span class="sep">·</span><a href="#cheap-real-estate-crm" data-seo-open="cheap-real-estate-crm">Cheap Real Estate CRM</a></div>
       <div class="footer-row"><span>© 2026 OneBizOS. All rights reserved.</span><span>Your entire business. One OS.</span></div>
     </div>
   </footer>
-  <!-- ================= LEGAL / COMPANY POPUPS ================= -->
-  <div class="modal-overlay" id="legal-modal" hidden>
-    <div class="modal-panel" role="dialog" aria-modal="true" aria-label="Privacy Policy">
-      <button class="modal-close" type="button" id="legal-modal-close" aria-label="Close popup">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 6l12 12M18 6 6 18"/></svg>
-      </button>
-
-      <div class="modal-doc" data-doc="privacy" data-title="Privacy Policy">
-        <p class="modal-kicker">OneBizOS — Legal</p>
-        <h3 class="modal-title">Privacy Policy</h3>
-        <p class="modal-lead">Your information belongs to you. We collect only what we need to serve you — and nothing we collect is ever for sale.</p>
-        <h4>What we collect</h4>
-        <p>When you purchase a OneBizOS product, we collect the email address you provide at checkout. We use it for exactly three things: delivering your product, validating your license, and sending you the product updates your purchase includes. We do not ask for more, because we do not need more.</p>
-        <h4>What we never do</h4>
-        <p>We do not sell, rent, share, or trade your personal information — to advertisers, data brokers, or anyone else. We do not use your email address to market third-party products, and this website does not track you across the internet.</p>
-        <h4>Payments</h4>
-        <p>Payments are processed by our payment provider. Your payment details are handled directly by them; we never see or store your full card number on our systems.</p>
-        <h4>Your control</h4>
-        <p>Your email address is yours. If you would like it corrected or removed from our records, write to us at <a href="mailto:hello.onebizos@gmail.com">hello.onebizos@gmail.com</a> and we will take care of it promptly. Please note that removing your email also removes our ability to deliver your updates and validate your license — so we will always confirm with you before removing it.</p>
-        <p class="modal-updated">Last updated: October 2026 · Questions about this policy? <a href="mailto:hello.onebizos@gmail.com">hello.onebizos@gmail.com</a></p>
-      </div>
-
-      <div class="modal-doc" data-doc="terms" data-title="Terms of Service" hidden>
-        <p class="modal-kicker">OneBizOS — Legal</p>
-        <h3 class="modal-title">Terms of Service</h3>
-        <p class="modal-lead">Straightforward terms, in plain language. We would rather earn your trust than hide behind fine print.</p>
-        <h4>One-time payment</h4>
-        <p>Every OneBizOS product is sold for a single one-time payment. There is no subscription, no monthly fee, and no recurring charge of any kind. The price shown at checkout is the complete price of the product.</p>
-        <h4>Your license</h4>
-        <p>Your purchase includes a license for one buyer — you — to use the product within your own business. The license is issued to the purchasing customer and may not be resold, redistributed, sublicensed, or shared with other businesses.</p>
-        <h4>Lifetime updates</h4>
-        <p>Every license includes lifetime updates to the product purchased, at no additional cost. When we release an improvement to your product, it is yours — that is part of what you paid for.</p>
-        <h4>What you are buying</h4>
-        <p>OneBizOS products are business operating systems built on Google Sheets, with automation powered by Google Apps Script. A free Google account is required to use them, and your system is delivered into your own Google workspace — your business data stays yours.</p>
-        <h4>Support</h4>
-        <p>Basic support is included with every license. If something does not work as described, contact us at <a href="mailto:hello.onebizos@gmail.com">hello.onebizos@gmail.com</a> and we will put it right.</p>
-        <h4>Refunds</h4>
-        <p>Refunds are governed by our Refund Policy: if the product is not as described, you may request a full refund within 7 days of purchase.</p>
-        <p class="modal-updated">Last updated: October 2026 · Questions about these terms? <a href="mailto:hello.onebizos@gmail.com">hello.onebizos@gmail.com</a></p>
-      </div>
-
-      <div class="modal-doc" data-doc="refund" data-title="Refund Policy" hidden>
-        <p class="modal-kicker">OneBizOS — Legal</p>
-        <h3 class="modal-title">Refund Policy</h3>
-        <p class="modal-lead">Buy with confidence. If what you receive is not what we described, you should not have to pay for it.</p>
-        <h4>The 7-day promise</h4>
-        <p>If the product you receive is not as described on this website, contact us within 7 days of your purchase and we will refund you in full. No forms to complete, no exit interviews, no hard feelings.</p>
-        <h4>How to request a refund</h4>
-        <p>Send one email to <a href="mailto:hello.onebizos@gmail.com">hello.onebizos@gmail.com</a> from the email address you used at checkout, and briefly tell us what was different from the description. We may ask a short question so we can fix the issue for future customers — but your refund never depends on your answers.</p>
-        <h4>How refunds are paid</h4>
-        <p>Approved refunds are issued to your original payment method. Once a refund is issued, the time it takes to appear in your account is set by your payment provider and bank.</p>
-        <h4>After a refund</h4>
-        <p>When a refund is completed, the license is deactivated and the product should be removed from your workspace. If you would like to buy again in the future, you will be welcome.</p>
-        <p class="modal-updated">Last updated: October 2026 · Request a refund or ask a question: <a href="mailto:hello.onebizos@gmail.com">hello.onebizos@gmail.com</a></p>
-      </div>
-
-      <div class="modal-doc" data-doc="about" data-title="About Us" hidden>
-        <p class="modal-kicker">OneBizOS — Company</p>
-        <h3 class="modal-title">About Us</h3>
-        <p class="modal-lead">OneBizOS builds premium business operating systems for small businesses and independent professionals — software that quietly runs the whole business, beautifully.</p>
-        <p>Most business software rents itself to you: a monthly fee, charged forever, for tools you never truly own. We started OneBizOS with a different belief — that powerful tools should be sold fairly, owned outright, and improved for life. No subscriptions. No features held hostage. No bloat.</p>
-        <h4>Our flagship</h4>
-        <p>Realtor Business OS is our first product: a complete operating system for real estate professionals that connects CRM, pipeline, tasks, cashflow, commissions, and reporting in one calm workspace. It is the first of a growing family of OneBizOS systems, each crafted for a specific profession to the same uncompromising standard.</p>
-        <h4>How we work</h4>
-        <p>We are a small team by design. Every product is built carefully, tested honestly, and described exactly as it is — if a page on this website says a product does something, it does it. We would rather earn one customer&rsquo;s trust for life than a hundred customers&rsquo; first payments.</p>
-        <p class="modal-updated">Talk to us any time: <a href="mailto:hello.onebizos@gmail.com">hello.onebizos@gmail.com</a></p>
-      </div>
-    </div>
-  </div>
   <!-- ================= EMBEDDED CHECKOUT ================= -->
   <div class="checkout-overlay" id="checkout-modal" hidden>
     <div class="checkout-panel" role="dialog" aria-modal="true" aria-label="OneBizOS secure checkout">
@@ -1306,6 +1321,7 @@
 
   <script>
     (function(){
+      var reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       var menuBtn=document.querySelector('.menu-btn');
       var links=document.querySelector('.nav-links');
       menuBtn.addEventListener('click',function(){
@@ -1347,47 +1363,6 @@
           card.setAttribute('aria-current','true');
         });
       });
-
-      /* Legal & company popups: elegant animated modal on this page — no new tab, no new page */
-      var legalModal=document.getElementById('legal-modal');
-      if(legalModal){
-        var legalPanel=legalModal.querySelector('.modal-panel');
-        var legalDocs=legalModal.querySelectorAll('.modal-doc');
-        var legalClose=document.getElementById('legal-modal-close');
-        var lastTrigger=null;
-        function openLegal(id,trigger){
-          var found=false;
-          legalDocs.forEach(function(d){
-            var show=d.getAttribute('data-doc')===id;
-            d.hidden=!show;
-            if(show){found=true;legalPanel.setAttribute('aria-label',d.getAttribute('data-title'));}
-          });
-          if(!found){return;}
-          lastTrigger=trigger||null;
-          legalModal.hidden=false;
-          legalPanel.scrollTop=0;
-          document.body.style.overflow='hidden';
-          requestAnimationFrame(function(){requestAnimationFrame(function(){legalModal.classList.add('open');});});
-          legalClose.focus();
-        }
-        function closeLegal(){
-          legalModal.classList.remove('open');
-          document.body.style.overflow='';
-          setTimeout(function(){legalModal.hidden=true;},340);
-          if(lastTrigger){lastTrigger.focus();}
-        }
-        document.querySelectorAll('[data-legal]').forEach(function(link){
-          link.addEventListener('click',function(e){
-            e.preventDefault();
-            openLegal(link.getAttribute('data-legal'),link);
-          });
-        });
-        legalClose.addEventListener('click',closeLegal);
-        legalModal.addEventListener('click',function(e){if(e.target===legalModal){closeLegal();}});
-        document.addEventListener('keydown',function(e){
-          if(e.key==='Escape' && !legalModal.hidden){closeLegal();}
-        });
-      }
 
       /* Embedded checkout: every buy/checkout link (flagship button, the three
          plan buttons, the assistant's checkout button) opens the checkout
@@ -1468,7 +1443,9 @@
         requestAnimationFrame(step);
       }
       var counters=document.querySelectorAll('[data-count]');
-      if('IntersectionObserver' in window){
+      if(reduceMotion){
+        counters.forEach(animateCount);
+      }else if('IntersectionObserver' in window){
         var co=new IntersectionObserver(function(entries){
           entries.forEach(function(en){
             if(en.isIntersecting){animateCount(en.target);co.unobserve(en.target);}
@@ -1478,8 +1455,6 @@
       }else{
         counters.forEach(animateCount);
       }
-
-      var reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
       /* Rotating hero headline word: words live in a fixed-size box and cross-fade
          inside it, so the hero layout never moves when the word changes */
@@ -2309,6 +2284,72 @@
         var h=window.location.hash.replace('#','');
         if(SLUGS.indexOf(h)>-1){showSeo(h,false);}
         else if(openSlug){hideSeo(false);}
+      }
+      window.addEventListener('popstate',syncFromHash);
+      window.addEventListener('hashchange',syncFromHash);
+      syncFromHash();
+    })();
+  </script>
+  <script>
+    /* Legal & company pages — standalone views (About, Privacy, Terms, Refund).
+       Same view-switch pattern as the Free Tracker and SEO pages: hash routes,
+       main hidden while a page is open, footer links open pages not modals. */
+    (function(){
+      var SLUGS=['about','privacy','terms','refund'];
+      var main=document.getElementById('main');
+      if(!main){return;}
+      var views={};
+      SLUGS.forEach(function(s){views[s]=document.getElementById('legal-'+s);});
+      var openSlug=null,savedY=0;
+      function closeMobileMenu(){
+        var l=document.querySelector('.nav-links');
+        var b=document.querySelector('.menu-btn');
+        if(l){l.classList.remove('open');}
+        if(b){b.setAttribute('aria-expanded','false');}
+      }
+      function hideAllViews(){SLUGS.forEach(function(s){if(views[s]){views[s].hidden=true;}});}
+      function showLegal(slug,push){
+        var v=views[slug];
+        if(!v){return;}
+        if(openSlug===slug){window.scrollTo(0,0);return;}
+        if(!openSlug){savedY=window.scrollY||0;}
+        hideAllViews();
+        v.hidden=false;
+        openSlug=slug;
+        main.hidden=true;
+        document.body.classList.add('legal-open');
+        window.scrollTo(0,0);
+        if(push){try{history.pushState({legal:slug},'','#'+slug);}catch(e){}}
+      }
+      function hideLegal(push){
+        if(!openSlug){return;}
+        hideAllViews();
+        openSlug=null;
+        main.hidden=false;
+        document.body.classList.remove('legal-open');
+        window.scrollTo(0,savedY);
+        if(push){try{history.pushState(null,'',window.location.pathname+window.location.search);}catch(e){}}
+      }
+      document.addEventListener('click',function(e){
+        var trg=e.target.closest?e.target.closest('[data-legal-open],[data-legal-close]'):null;
+        if(trg){
+          e.preventDefault();
+          e.stopPropagation();
+          closeMobileMenu();
+          if(trg.hasAttribute('data-legal-open')){showLegal(trg.getAttribute('data-legal-open'),true);}
+          else{hideLegal(true);window.scrollTo(0,0);}
+          return;
+        }
+        if(!openSlug){return;}
+        var other=e.target.closest?e.target.closest('[data-ft-open],[data-seo-open]'):null;
+        if(other){hideAllViews();openSlug=null;document.body.classList.remove('legal-open');return;}
+        var a=e.target.closest?e.target.closest('a[href^="#"]'):null;
+        if(a&&a.getAttribute('href').length>1){hideLegal(false);}
+      },true);
+      function syncFromHash(){
+        var h=window.location.hash.replace('#','');
+        if(SLUGS.indexOf(h)>-1){showLegal(h,false);}
+        else if(openSlug){hideLegal(false);}
       }
       window.addEventListener('popstate',syncFromHash);
       window.addEventListener('hashchange',syncFromHash);
